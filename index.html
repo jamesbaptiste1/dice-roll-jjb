@@ -1,1 +1,45 @@
-diceroll
+<!--
+  Author:  James Baptiste   
+  Class:   Software Engineering 
+  Project: Lab 2 / Dice Roller
+  Description: This is my dice roller game. The objective is to roll two die,
+  if they add up to an even number you lose. If they add up to an odd number you win.  
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Program title -->
+    <title>Feeling ODD</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <!-- Program name   -->
+    <h1>FEELING ODD?</h1>
+    <!-- Program Instructions -->
+    <p>
+      Roll the dice, if the dice add up to an even number <br />
+      you lose, If they add up to an odd number, you win!
+    </p>
+    <!-- Fixing position of dice and button -->
+    <div class="fixed">
+      <div id="die1" class="dice">0</div>
+      <div id="die2" class="dice">0</div>
+      <div class="button">
+        <!-- autofocus and reload page for new roll -->
+        <button autofocus onclick="window.location.reload().rollDice()">
+          Roll Dice
+        </button>
+      </div>
+      <!-- Centering text -->
+      <div class="centered">
+        <h2 id="text"></h2>
+      </div>
+    </div>
+  </body>
+</html>
