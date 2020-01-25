@@ -10,9 +10,9 @@ function rollDice() {
   die2.innerHTML = d2;
   //alert user of win or lose
   if (diceTotal % 2) {
-    text.innerHTML += diceTotal + "! You rolled even!";
+    text.innerHTML += diceTotal + "! Congrats! You rolled odd!";
   } else {
-    text.innerHTML += diceTotal + "! " + "Congrats! You rolled odd!";
+    text.innerHTML += diceTotal + "! " + " Too bad, you rolled even";
   }
 }
 //roll dice when loading page
